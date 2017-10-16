@@ -2,38 +2,45 @@
 
 
 COSC 2P95 – Lab Exercise 4 – Section 01 – IO
-Since you need to submit both images and your source file, package it all up into a .zip to submit.
-This week, we'll be extending on last week's discretization problem.
+
 If you'll recall, one of the formulas we used was this one:
 https://www.wolframalpha.com/input/?i=plot+%28%281%2F2*sin%28x%29%29%2B%281%2F2*cos%28y%29%29%29,+x%3D-4..6,+y%3D-12..5
+
 We're going to modify it slightly by adding a new parameter, z:
 https://www.wolframalpha.com/input/?i=plot+(cos+z*(1%2F2*sin(x)%2B(1%2F2*cos(y)))),+x%3D-4..6,+y%3D-12..5,+z%3D0
+
 Thus far, since z is set to 0, and cos(0) is 1, there isn't yet any change to the actual produced results.
 Rather than outputting to either a 'bitmap' or a dump of floating-point values, you're instead going to be 
 generating a PGM file.
+
+
 Portable Graymap File Format
+
 The Portable Pixmap (PPM), Portable Graymap (PGM), and Portable Bitmap (PBM) file formats are all part of 
 the same family of naive (PNM) image formats.
 They all revolve around a minimal ASCII-based header, followed by direct pixel information.
 We'll be using the PGM format, which means we can only produce greyscale images.
 Note that, in addition to being very easily googled, this format is also explained in your 
-man
- pages!
+man pages!
+
 Just type: 
 man pgm
+
+
 There are two main versions of PGMs: raw and plain. We'll be using the plain version, which means we'll be 
 generating images that rely solely on ASCII encoding.
 The man page has everything you need (you can also access man pages from sandcastle, so you can easily do 
 this from home). To be clear, we're using the P2 
-magic number
-, and the maximum value we'll allow is 255.
+magic number, and the maximum value we'll allow is 255.
+
 Single Frame
+
 You'll be writing two programs (you can actually write them as a single program if you wish; it'll just be 
 explained as two). Let's look at the simpler one first.
+
 Based on the new version of the formula above (which multiplies the entire expression by cos(0), i.e. 1), create 
-a .pgm file, called 
-file0001.pgm
-.
+a .pgm file, called file0001.pgm.
+
 Tips:
 •
 The calculated values from that formula are all in the range of -1..+1
