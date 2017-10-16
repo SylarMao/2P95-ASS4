@@ -1,7 +1,4 @@
-# 2P95-ASS4
-
-
-COSC 2P95 – Lab Exercise 4 – Section 01 – IO
+# COSC 2P95 – Lab Exercise 4 – Section 01 – IO
 
 If you'll recall, one of the formulas we used was this one:
 https://www.wolframalpha.com/input/?i=plot+%28%281%2F2*sin%28x%29%29%2B%281%2F2*cos%28y%29%29%29,+x%3D-4..6,+y%3D-12..5
@@ -14,7 +11,7 @@ Rather than outputting to either a 'bitmap' or a dump of floating-point values, 
 generating a PGM file.
 
 
-Portable Graymap File Format
+# Portable Graymap File Format
 
 The Portable Pixmap (PPM), Portable Graymap (PGM), and Portable Bitmap (PBM) file formats are all part of 
 the same family of naive (PNM) image formats.
@@ -32,7 +29,7 @@ The man page has everything you need (you can also access man pages from sandcas
 this from home). To be clear, we're using the P2 
 magic number, and the maximum value we'll allow is 255.
 
-Single Frame
+# Single Frame
 
 You'll be writing two programs (you can actually write them as a single program if you wish; it'll just be 
 explained as two). Let's look at the simpler one first.
@@ -40,7 +37,7 @@ explained as two). Let's look at the simpler one first.
 Based on the new version of the formula above (which multiplies the entire expression by cos(0), i.e. 1), create 
 a .pgm file, called file0001.pgm.
 
-Tips:
+# Tips:
 
 •The calculated values from that formula are all in the range of -1..+1
 
@@ -66,7 +63,7 @@ will convert it to a .png format that you can download from sandcastle and easil
 The frame from this section should look roughly like this:
 
 
-Animation
+# Animation
 
 (Again, this may be part of the above program, but will be treated as a separate one for explanation's sake)
 Suppose you were to generate another frame where z had a value of 0.1, and then another where it was 0.2, and 
@@ -98,7 +95,7 @@ Unfortunately, the .gif may not display properly in the image-viewer in Linux. I
 browser to view it. You should see an infinitely-repeating pattern. Assuming you chose enough frames (e.g. 60),
 it should be pretty smooth.
 
-Requirements for Submission:
+# Requirements for Submission:
 
 •All pixel data must be stored in a tabular format
 
