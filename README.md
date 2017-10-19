@@ -62,7 +62,7 @@ convert file0001.pgm file0001.png
 will convert it to a .png format that you can download from sandcastle and easily view at home, if desired.
 The frame from this section should look roughly like this:
 
-![](https://github.com/fs1237/2P95-ASS4/blob/master/1.PNG)
+![](https://github.com/fs1237/2P95-ASS4/blob/master/frames1.jpg)
 
 # Animation
 
